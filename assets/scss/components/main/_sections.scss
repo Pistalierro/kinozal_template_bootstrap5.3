@@ -4,6 +4,58 @@
 @use "../../mixins/mixins-media" as *;
 @use "../../mixins/extends" as *;
 
+section {
+	overflow: hidden;
+}
+
 .main {
 	margin-bottom: $gap-xl;
+
+	.site-search {
+		margin-bottom: $gap * 3;
+	}
+
+	.user-login {
+		margin-bottom: $gap * 4;
+	}
+}
+
+.new-films {
+
+	&__row {
+		margin-left: -$gap-sm;
+		margin-right: -$gap-sm;
+	}
+
+	&-item {
+		margin-bottom: $gap;
+		padding-left: $gap-sm;
+		padding-right: $gap-sm;
+
+		&:hover,
+		&:focus {
+			.new-films-item__thumbnail {
+				background-color: $color-accent;
+			}
+
+			h3 {
+				color: $color-light;
+			}
+		}
+
+		&__thumbnail {
+			transition: background-color 0.25s;
+		}
+
+		&__title {
+			margin: 0;
+			padding: $gap-sm;
+			font-size: 1rem;
+			text-align: center;
+			color: $color-dark;
+			font-weight: bold;
+			@include text-shortener;
+			transition: color 0.25s;
+		}
+	}
 }

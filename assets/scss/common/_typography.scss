@@ -15,6 +15,29 @@ body {
 	font-size: $font-size;
 }
 
+h1 {
+	font-family: $font-header;
+	position: relative;
+
+	@include sm-min {
+		font-size: 3rem;
+		margin: -$gap-sm 0 1em;
+	}
+	@include sm {
+		font-size: 2rem;
+		margin: 0 0 1em;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+
+		margin: 0.9em 0 0 $gap-md;
+		border-bottom: 3px solid $color-accent-light;
+	}
+}
+
 a {
 	text-decoration: none;
 	color: $color-primary;
