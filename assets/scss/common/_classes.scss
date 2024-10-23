@@ -3,7 +3,3 @@
 @use "../mixins/mixins" as *;
 @use "../mixins/mixins-media" as *;
 @use "../mixins/extends" as *;
-
-.bg-body-tertiary {
-	background-color: $color-dark !important;
-}
