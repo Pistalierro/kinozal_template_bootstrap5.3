@@ -20,6 +20,7 @@ section {
 	}
 }
 
+.top-week,
 .new-films {
 
 	&__row {
@@ -34,6 +35,7 @@ section {
 
 		&:hover,
 		&:focus {
+			.top-week-item__thumbnail,
 			.new-films-item__thumbnail {
 				background-color: $color-accent;
 			}
