@@ -14,3 +14,16 @@
 	background-color: $color-light;
 	border: 1px solid $color-gray;
 }
+
+%btn-accent {
+	background-color: $color-accent-light;
+	border-color: $color-accent-light;
+
+	&:hover,
+	&:focus {
+		background-color: $color-accent;
+		border-color: $color-accent;
+		color: $color-light;
+
+	}
+}

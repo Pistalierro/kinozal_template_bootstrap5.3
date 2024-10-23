@@ -55,8 +55,26 @@
 	}
 }
 
+@mixin xl-md {
+	@media (max-width: $xl - 0.2) and (min-width: $md) {
+		@content;
+	}
+}
+
+@mixin xl-sm {
+	@media (max-width: $xl - 0.2) and (min-width: $sm) {
+		@content;
+	}
+}
+
 @mixin lg-md {
 	@media (max-width: $lg - 0.2) and (min-width: $md) {
+		@content;
+	}
+}
+
+@mixin lg-sm {
+	@media (max-width: $lg - 0.2) and (min-width: $sm) {
 		@content;
 	}
 }
