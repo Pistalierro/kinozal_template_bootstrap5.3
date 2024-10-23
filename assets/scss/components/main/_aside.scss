@@ -4,3 +4,15 @@
 @use "../../mixins/mixins-media" as *;
 @use "../../mixins/extends" as *;
 
+.aside {
+	margin-bottom: $gap-xl;
+}
+
+.site-search__btn {
+	@extend %btn-white;
+
+	&:hover,
+	&:focus {
+		@extend %btn-white;
+	}
+}

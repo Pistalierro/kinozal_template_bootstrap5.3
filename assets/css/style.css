@@ -8,6 +8,13 @@
   background-color: #f4f4f4;
 }
 
+.site-search__btn,
+.site-search__btn:hover,
+.site-search__btn:focus {
+  border: 1px solid #d5d5d5;
+  background-color: #ffffff;
+}
+
 *::before,
 *::after,
 * {
@@ -47,6 +54,10 @@ a {
 }
 .card-body {
   border-radius: 0 0 4px 4px;
+}
+
+.form-control-lg {
+  font-size: 0.875rem;
 }
 
 .header {
@@ -97,6 +108,15 @@ a {
 .header-navbar__item .active:focus {
   background-color: #517ba2;
 }
+
+.main {
+  margin-bottom: 80px;
+}
+
+.aside {
+  margin-bottom: 80px;
+}
+
 @media (min-width: 768px) {
   .header-navbar__item a {
     border-radius: 4px;
