@@ -11,6 +11,7 @@
 .user-login__btn,
 .site-search__btn {
 	@extend %btn-white;
+	color: $color-gray-dark;
 
 	&:hover,
 	&:focus {
@@ -44,3 +45,51 @@
 		}
 	}
 }
+
+.site-news {
+
+	&-item {
+		position: relative;
+
+		&:not(:last-child) {
+			margin-bottom: $gap * 2;
+
+			&::after {
+				position: absolute;
+				content: "";
+				bottom: -$gap;
+				right: 0;
+				width: calc(100% - 100px);
+				height: 1px;
+				background-color: $color-gray;
+			}
+		}
+
+		&:hover,
+		&:focus {
+			img {
+				background-color: $color-accent;
+				border-color: $color-accent;
+			}
+
+			a {
+				color: $color-accent;
+			}
+		}
+
+		&__image {
+			transition: background-color 0.25s;
+		}
+
+		&__link {
+			@include block-shortener(1rem, 1.5, 50px, 2);
+			transition: color 0.25s;
+		}
+
+		&__date {
+			color: $color-gray-dark;
+
+		}
+	}
+}
+
