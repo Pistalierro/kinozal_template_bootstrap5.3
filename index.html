@@ -106,9 +106,8 @@
 					<form action="url/search">
 						<div class="input-group mb-3">
 							<input aria-describedby="button-addon2-sidebar" aria-label="Recipient's username" class="form-control form-control-lg"
-							       placeholder="Поиск по сайту"
-							       type="text">
-							<button class="site-search__btn btn" id="button-addon2-sidebar" type="button">
+							       name="search" placeholder="Поиск по сайту" type="text">
+							<button class="site-search__btn btn" id="button-addon2-sidebar" type="submit">
 								<i class="fs-5 fa-solid fa-magnifying-glass"></i>
 							</button>
 						</div>
@@ -119,7 +118,54 @@
 			<div class="user-login card">
 				<div class="card-header">Пользователь</div>
 				<div class="card-body">
-					CARD_BODY
+
+					<ul class="user-login__list nav nav-tabs" id="myTabSidebar" role="tablist">
+						<li class="user-login__item nav-item" role="presentation">
+							<button aria-controls="home-tab-pane-sidebar" aria-selected="true" class="nav-link active"
+							        data-bs-target="#home-tab-pane-sidebar" data-bs-toggle="tab" id="home-tab-sidebar"
+							        role="tab" type="button"><i class="fa-solid fa-right-to-bracket"></i>
+							</button>
+						</li>
+						<li class="user-login__item nav-item" role="presentation">
+							<button aria-controls="profile-tab-pane-sidebar" aria-selected="false" class="nav-link"
+							        data-bs-target="#profile-tab-pane-sidebar" data-bs-toggle="tab" id="profile-tab-sidebar"
+							        role="tab" type="button"><i class="fa-solid fa-user"></i>
+							</button>
+						</li>
+					</ul>
+					<div class="tab-content" id="myTabContentSidebar">
+						<div aria-labelledby="home-tab-sidebar" class="tab-pane fade show active" id="home-tab-pane-sidebar" role="tabpanel"
+						     tabindex="0">
+							<form action="url/login">
+								<div class="mb-3">
+									<input class="form-control form-control-lg" name="login" placeholder="Логин" type="text">
+								</div>
+								<div class="mb-3">
+									<input class="form-control form-control-lg" name="password" placeholder="Пароль" type="password">
+								</div>
+								<div class="d-grid">
+									<button class="user-login__btn btn fs-5" type="submit">Вход</button>
+								</div>
+							</form>
+						</div>
+						<div aria-labelledby="profile-tab-sidebar" class="tab-pane fade" id="profile-tab-pane-sidebar" role="tabpanel" tabindex="0">
+							<form action="url/login">
+								<div class="mb-3">
+									<input class="form-control form-control-lg" name="login" placeholder="Логин" type="text">
+								</div>
+								<div class="mb-3">
+									<input class="form-control form-control-lg" name="password" placeholder="Пароль" type="password">
+								</div>
+								<div class="mb-3">
+									<input class="form-control form-control-lg" name="email" placeholder="Email" type="email">
+								</div>
+								<div class="d-grid">
+									<button class="user-login__btn btn fs-5" type="submit">Регистрация</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
 				</div>
 			</div>
 

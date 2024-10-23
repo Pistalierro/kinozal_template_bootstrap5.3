@@ -8,7 +8,10 @@
   background-color: #f4f4f4;
 }
 
+.user-login__btn,
 .site-search__btn,
+.user-login__btn:hover,
+.user-login__btn:focus,
 .site-search__btn:hover,
 .site-search__btn:focus {
   border: 1px solid #d5d5d5;
@@ -117,6 +120,31 @@ a {
   margin-bottom: 80px;
 }
 
+.user-login {
+  position: relative;
+}
+.user-login__list {
+  position: absolute;
+  top: 0;
+  right: 15px;
+
+  border: none;
+}
+.user-login__item {
+  background-color: transparent !important;
+}
+.user-login__item button {
+  padding: 10px 5px 10px 10px;
+
+  color: #d5d5d5;
+  border: none !important;
+
+  font-size: 1.15rem;
+}
+.user-login__item button.active {
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
 @media (min-width: 768px) {
   .header-navbar__item a {
     border-radius: 4px;

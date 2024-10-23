@@ -8,11 +8,39 @@
 	margin-bottom: $gap-xl;
 }
 
+.user-login__btn,
 .site-search__btn {
 	@extend %btn-white;
 
 	&:hover,
 	&:focus {
 		@extend %btn-white;
+	}
+}
+
+.user-login {
+	position: relative;
+
+	&__list {
+		position: absolute;
+		top: 0;
+		right: $gap;
+		border: none;
+	}
+
+	&__item {
+		background-color: transparent !important;
+
+		button {
+			color: $color-gray;
+			border: none !important;
+			padding: $gap-md calc($gap / 3) $gap-md $gap-md;
+			font-size: 1.15rem;
+		}
+
+		button.active {
+			background-color: transparent !important;
+			color: $color-light !important;
+		}
 	}
 }
