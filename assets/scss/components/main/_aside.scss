@@ -93,3 +93,29 @@
 	}
 }
 
+.top-films {
+
+	&__item {
+		background-color: transparent;
+		margin-left: -0.5px;
+		margin-right: -0.5px;
+		transition: background-color 0.25s;
+
+		a, span {
+			transition: all 0.25s;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: $color-accent;
+
+			a {
+				color: $color-light;
+			}
+
+			span {
+				background-color: $color-dark !important;
+			}
+		}
+	}
+}
