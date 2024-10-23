@@ -3,3 +3,36 @@
 @use "../../mixins/mixins" as *;
 @use "../../mixins/mixins-media" as *;
 @use "../../mixins/extends" as *;
+
+.header-navbar {
+
+	&__list {
+	}
+
+	&__item {
+
+		a {
+			transition: all 0.25s ease-in-out;
+
+			&:hover,
+			&:focus {
+				background-color: $color-primary;
+				color: $color-light;
+			}
+
+			@include md-min {
+				border-radius: 4px;
+			}
+		}
+
+		.active {
+			background-color: $color-primary-dark;
+			transition: background-color 0.25s ease-in-out;
+
+			&:hover,
+			&:focus {
+				background-color: $color-primary-light;
+			}
+		}
+	}
+}

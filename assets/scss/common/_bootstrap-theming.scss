@@ -7,3 +7,24 @@
 .bg-body-tertiary {
 	background-color: $color-dark !important;
 }
+
+.card {
+	border: none;
+
+	&:not(:last-of-type) {
+		margin-bottom: $gap * 2;
+	}
+
+	&-header {
+		background-color: $color-accent;
+		color: $color-light;
+		border: none;
+		font-size: 1.25rem;
+		letter-spacing: 0.1em;
+	}
+
+	&-body {
+		@extend %background-border-gray;
+		border-radius: 0 0 4px 4px;
+	}
+}

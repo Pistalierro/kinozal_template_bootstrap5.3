@@ -5,6 +5,8 @@
 @use "../../mixins/extends" as *;
 
 .header {
+	margin-bottom: $gap-xl;
+
 	&-logo {
 		padding: 100px 0;
 		background-color: $color-dark;

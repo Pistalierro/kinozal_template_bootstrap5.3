@@ -3,6 +3,11 @@
   text-shadow: 0 0 5px #000000, 0 0 15px #000000, 0 0 30px #000000;
 }
 
+.card-body {
+  border: 1px solid #d5d5d5;
+  background-color: #f4f4f4;
+}
+
 *::before,
 *::after,
 * {
@@ -25,6 +30,28 @@ a {
   background-color: #232323 !important;
 }
 
+.card {
+  border: none;
+}
+.card:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.card-header {
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+  border: none;
+  background-color: #df8a13;
+
+  font-size: 1.25rem;
+}
+.card-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.header {
+  margin-bottom: 80px;
+}
 .header-logo {
   padding: 100px 0;
 
@@ -49,4 +76,29 @@ a {
   color: #ffffff;
 
   font-size: 1.15rem;
+}
+
+.header-navbar__item a {
+  -webkit-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
+}
+.header-navbar__item a:hover,
+.header-navbar__item a:focus {
+  color: #ffffff;
+  background-color: #165690;
+}
+.header-navbar__item .active {
+  -webkit-transition: background-color 0.25s ease-in-out;
+          transition: background-color 0.25s ease-in-out;
+
+  background-color: #043170;
+}
+.header-navbar__item .active:hover,
+.header-navbar__item .active:focus {
+  background-color: #517ba2;
+}
+@media (min-width: 768px) {
+  .header-navbar__item a {
+    border-radius: 4px;
+  }
 }

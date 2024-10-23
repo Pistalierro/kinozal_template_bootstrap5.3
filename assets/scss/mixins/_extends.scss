@@ -4,3 +4,8 @@
 %text-shadow {
 	text-shadow: 0 0 5px $color-black, 0 0 15px $color-black, 0 0 30px $color-black;
 }
+
+%background-border-gray {
+	background-color: $color-gray-light;
+	border: 1px solid $color-gray;
+}

@@ -25,35 +25,35 @@
 	</div>
 
 	<div class="header-navbar">
-		<nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-			<div class="container-md justify-content-center">
+		<nav class="navbar bg-dark navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+			<div class="container-md justify-content-center ps-sm-0 pe-sm-0 ps-md-2 pe-md-2">
 				<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
 				        data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mb-2 mb-md-0 flex-fill gap-2 mt-lg-0 mt-sm-2 text-center">
-						<li class="nav-item">
+					<ul class="header-navbar__list navbar-nav mb-2 mb-md-0 flex-fill gap-2 mt-md-0 mt-sm-2 text-center rounded-md-1">
+						<li class="header-navbar__item nav-item">
 							<a aria-current="page" class="nav-link active" href="#">Главная</a>
 						</li>
-						<li class="nav-item">
+						<li class="header-navbar__item nav-item">
 							<a class="nav-link" href="pages/page.html">Фильмы</a>
 						</li>
-						<li class="nav-item">
+						<li class="header-navbar__item nav-item">
 							<a class="nav-link" href="#">Сериалы</a>
 						</li>
-						<li class="nav-item">
+						<li class="header-navbar__item nav-item">
 							<a class="nav-link" href="#">Контакты</a>
 						</li>
 					</ul>
-					<ul class="navbar-nav me-auto mb-2 mb-md-0 flex-fill justify-content-end gap-2 text-center">
-						<li class="nav-item">
+					<ul class="header-navbar__list navbar-nav me-auto mb-2 mb-md-0 flex-fill justify-content-end gap-2 text-center">
+						<li class="header-navbar__item nav-item">
 							<a class="nav-link" href="#">Новинки</a>
 						</li>
-						<li class="nav-item">
+						<li class="header-navbar__item nav-item">
 							<a class="nav-link" href="#">Рейтинг</a>
 						</li>
-						<li class="nav-item">
+						<li class="header-navbar__item nav-item">
 							<a class="nav-link" href="#">Раздачи</a>
 						</li>
 					</ul>
@@ -63,7 +63,73 @@
 	</div>
 </header>
 
-<section></section>
+<div class="container-md">
+	<div class="row">
+		<main class="order-1 col-xl-9 col-lg-8">MAIN</main>
+
+		<aside class="order-0 col-xl-3 col-lg-4">
+
+			<div class="vertical-slider card rounded-1 overflow-hidden">
+				<div class=" carousel slide" data-bs-ride="carousel" id="vertical-carousel">
+					<div class="carousel-indicators">
+						<button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
+						        type="button"></button>
+						<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button>
+						<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img alt="poster" class="d-block w-100" src="assets/img/films/film4.jpg">
+						</div>
+						<div class="carousel-item">
+							<img alt="poster" class="d-block w-100" src="assets/img/films/film2.jpg">
+						</div>
+						<div class="carousel-item">
+							<img alt="poster" class="d-block w-100" src="assets/img/films/film3.jpg">
+						</div>
+					</div>
+					<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#vertical-carousel" type="button">
+						<span aria-hidden="true" class="carousel-control-prev-icon"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#vertical-carousel" type="button">
+						<span aria-hidden="true" class="carousel-control-next-icon"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">Поиск</div>
+				<div class="card-body">
+					CARD_BODY
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">Пользователь</div>
+				<div class="card-body">
+					CARD_BODY
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">Новости сайта</div>
+				<div class="card-body">
+					CARD_BODY
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">Рейтинг фильмов</div>
+				<div class="card-body">
+					CARD_BODY
+				</div>
+			</div>
+
+		</aside>
+	</div>
+</div>
 
 
 <script src="assets/js/main.js"></script>
