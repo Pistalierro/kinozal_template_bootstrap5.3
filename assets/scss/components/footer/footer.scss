@@ -3,3 +3,27 @@
 @use "../../mixins/mixins" as *;
 @use "../../mixins/mixins-media" as *;
 @use "../../mixins/extends" as *;
+
+.footer {
+	padding-top: $gap * 3;
+	background-color: $color-dark;
+	color: $color-gray;
+
+	&-top {
+		margin-bottom: $gap * 2;
+
+		a {
+			color: $color-gray-dark;
+			transition: color 0.25s;
+
+			&:hover,
+			&:focus {
+				color: $color-gray;
+			}
+		}
+	}
+
+	&-second {
+		padding-bottom: $gap * 2;
+	}
+}
