@@ -3,6 +3,7 @@
   text-shadow: 0 0 5px #000000, 0 0 15px #000000, 0 0 30px #000000;
 }
 
+.film-info__well,
 .card-body {
   border: 1px solid #d5d5d5;
   background-color: #f4f4f4;
@@ -391,6 +392,13 @@ section {
 .footer-second {
   padding-bottom: 30px;
 }
+
+.film-info__well {
+  padding: 1rem;
+
+  border-radius: 0 0 4px 4px;
+}
+
 @media (min-width: 576px) {
   h1 {
     margin: -7.5px 0 1em;
@@ -403,11 +411,13 @@ section {
     font-size: 2.5rem;
   }
 }
+
 @media (min-width: 768px) {
   .header-navbar__item a {
     border-radius: 4px;
   }
 }
+
 @media (min-width: 1200px) {
   .film-news-item__text {
     display: -webkit-box;
@@ -422,6 +432,7 @@ section {
     -webkit-line-clamp: 6;
   }
 }
+
 @media (max-width: 1199.8px) and (min-width: 768px) {
   .film-news-item__text {
     display: -webkit-box;
@@ -436,6 +447,7 @@ section {
     -webkit-line-clamp: 4;
   }
 }
+
 @media (max-width: 575.8px) {
   h1 {
     margin: 0 0 1em;
