@@ -65,18 +65,29 @@ section {
 .film-news {
 	&-item {
 
-		a {
+		h3 > a {
+			transition: color 0.25s;
+		}
+
+
+		img,
+		&__btn {
 			transition: background-color 0.25s;
 		}
 
 		&:hover,
 		&:focus {
-			img {
+			img,
+			.film-news-item__btn {
 				background-color: $color-accent;
 			}
 
-			a {
+			.film-news-item > a {
 				background-color: $color-accent;
+			}
+
+			h3 > a {
+				color: $color-accent;
 			}
 		}
 
