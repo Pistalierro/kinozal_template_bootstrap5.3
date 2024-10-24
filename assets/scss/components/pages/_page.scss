@@ -4,10 +4,19 @@
 @use "../../mixins/mixins-media" as *;
 @use "../../mixins/extends" as *;
 
-.film-info {
-	&__well {
+.film {
+
+	&-info {
+		&__well {
+			@extend %background-border-gray;
+			padding: 1rem;
+			border-radius: 0 0 4px 4px;
+		}
+	}
+
+	&-description__well {
+		padding: $gap;
 		@extend %background-border-gray;
-		padding: 1rem;
-		border-radius: 0 0 4px 4px;
+		border-radius: 4px;
 	}
 }
